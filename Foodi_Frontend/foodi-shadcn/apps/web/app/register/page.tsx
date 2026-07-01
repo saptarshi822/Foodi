@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Register() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
-        <div className="relative hidden bg-muted lg:block">
+        <div className="relative hidden bg-muted lg:block animate-slide-in-right">
         <Image
           src="/foodii.png"
           alt="Image"

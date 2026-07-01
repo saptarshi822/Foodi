@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2">
-      <div className="flex flex-col gap-4 p-6 md:p-10 border-l-2 animate-slide-in-right">
+      <div className="flex flex-col gap-4 p-6 md:p-10 border-r-2  animate-slide-in-right">
         <div className="flex justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-medium">
             <div className="flex size-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
@@ -20,7 +20,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
-      <div className="relative hidden bg-muted lg:block">
+      <div className="relative hidden bg-muted lg:block animate-slide-in-right">
         <Image
           src="/foodii.png"
           alt="Image"
