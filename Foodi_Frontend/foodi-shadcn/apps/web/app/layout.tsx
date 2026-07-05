@@ -2,11 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 
 
 import "@workspace/ui/styles/globals.css" 
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@workspace/ui/lib/utils";
-import { Sidebar } from "lucide-react";
-import { SidebarProvider } from "@workspace/ui/components/sidebar";
-import AppSidebar from "@/components/shadcn/app-sidebar";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'})
 
