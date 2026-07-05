@@ -1,5 +1,5 @@
 
-import RegisterForm from "@/components/register"
+import { RegisterForm } from "@/components/shadcn/register-form"
 import { GalleryVerticalEndIcon } from "lucide-react"
 import Image from "next/image"
 export default function Register() {

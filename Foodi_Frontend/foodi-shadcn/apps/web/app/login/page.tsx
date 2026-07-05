@@ -1,5 +1,5 @@
 
-import Login from "@/components/login"
+import Login from "@/components/Login"
 import { GalleryVerticalEndIcon } from "lucide-react"
 import Image from "next/image"
 export default function LoginPage() {
