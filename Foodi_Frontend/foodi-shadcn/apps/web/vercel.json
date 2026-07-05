@@ -2,5 +2,8 @@
 {
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
-    ]
+    ],
+    "build": {
+    "outputDirectory": ".next"
+  }
 }
