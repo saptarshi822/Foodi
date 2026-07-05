@@ -5,7 +5,7 @@ import Footer from "@/components/footer"
 import { SidebarProvider } from "@workspace/ui/components/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
 
-export default function HomePageLayout({ children }: { children: ReactNode }) {
+export default function MenuPageLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider defaultOpen={false}>
       <div className="flex min-h-screen w-full">

@@ -67,6 +67,15 @@ function Carousel({
     setCanScrollNext(api.canScrollNext())
   }, [])
 
+  const reInit = React.useCallback(() => {
+    if (!api) return
+
+    window.requestAnimationFrame(() => {
+      api.reInit()
+      onSelect(api)
+    })
+  }, [api, onSelect])
+
   const scrollPrev = React.useCallback(() => {
     api?.scrollPrev()
   }, [api])
@@ -99,10 +108,17 @@ function Carousel({
     api.on("reInit", onSelect)
     api.on("select", onSelect)
 
+    window.addEventListener("resize", reInit)
+
     return () => {
       api?.off("select", onSelect)
+      window.removeEventListener("resize", reInit)
     }
-  }, [api, onSelect])
+  }, [api, onSelect, reInit])
+
+  React.useEffect(() => {
+    reInit()
+  }, [reInit])
 
   return (
     <CarouselContext.Provider

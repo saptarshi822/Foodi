@@ -1,12 +1,11 @@
 "use client"
-// @jsx: preserve
 
 import * as React from "react"
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { useIsMobile } from "@workspace/ui/hooks/use-mobile"
+import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@workspace/ui/lib/utils"
 import { Button } from "@workspace/ui/components/button"
 import { Input } from "@workspace/ui/components/input"
@@ -722,5 +721,3 @@ export {
   SidebarTrigger,
   useSidebar,
 }
-
-export default Sidebar
